@@ -1,0 +1,53 @@
+/*nav-bar*/
+nav {
+  font-size: 1.5rem;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul li {
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.link:hover {
+  border-bottom: 2px solid black;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 3rem;
+  margin: 20px;
+}
+
+/*about*/
+.about,
+.error {
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+.goback {
+  text-decoration: none;
+  color: black;
+  background-color: lightgray;
+  padding: 10px;
+  border-radius: 5px;
+}
