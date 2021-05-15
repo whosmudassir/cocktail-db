@@ -15,7 +15,17 @@ const CocktailList = () => {
     );
   }
 
-  return <div></div>;
+  return (
+    <section>
+      <h2>Cocktails</h2>
+
+      <div calssName="center">
+        {cocktails.map((item) => {
+          return <Cocktail key={item.id} {...item} />;
+        })}
+      </div>
+    </section>
+  );
 };
 
 export default CocktailList;
