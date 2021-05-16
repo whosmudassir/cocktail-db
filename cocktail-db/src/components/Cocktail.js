@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import "../App.css";
 const Cocktail = ({ image, name, id, info, glass }) => {
   return (
     <article className="cocktail">
-      <div calssName="img-container">
-        <img src={image} alt={name} />
+      <div className="img-container">
+        <img className="imgsrc" src={image} alt={name} />
       </div>
 
       <div className="cocktail-footer">

@@ -51,3 +51,54 @@ nav ul li {
   padding: 10px;
   border-radius: 5px;
 }
+
+/* main section */
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.cocktail-section {
+  margin: 20px;
+  border: 2px solid black;
+  padding: 20px;
+  width: 406.8px;
+  margin: 40px auto;
+}
+
+.cocktail {
+  margin: 20px;
+  border: 2px solid black;
+  padding: 20px;
+  width: 406.8px;
+}
+
+.imgsrc {
+  width: 406.8px;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 18px;
+}
+
+.searchbar {
+  width: 500px;
+  height: 25px;
+  color: black;
+}
+
+.btn-primary {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+}

@@ -1,9 +1,9 @@
 import React from "react";
-import { useGlobalContext } from "../context.js";
+import { useGlobalContext } from "../context";
+import "../App.css";
 
-const SearchForm = () => {
+export default function SearchForm() {
   const { setSearchTerm } = useGlobalContext();
-
   const searchValue = React.useRef("");
 
   React.useEffect(() => {
@@ -16,13 +16,14 @@ const SearchForm = () => {
   function handleSubmit(e) {
     e.preventDefault();
   }
-
   return (
     <section className="section search">
       <form className="search-form" onSubmit={handleSubmit}>
         <div className="form-control">
-          <label htmlFor="name">search your favorite cocktail</label>
+          <label htmlFor="name"> </label>
           <input
+            className="searchbar"
+            placeholder=" 🔎 Search your favourite cocktail"
             type="text"
             name="name"
             id="name"
@@ -33,6 +34,4 @@ const SearchForm = () => {
       </form>
     </section>
   );
-};
-
-export default SearchForm;
+}
