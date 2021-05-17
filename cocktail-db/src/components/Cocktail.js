@@ -9,9 +9,9 @@ const Cocktail = ({ image, name, id, info, glass }) => {
       </div>
 
       <div className="cocktail-footer">
-        <h3>{name}</h3>
-        <h4>{glass}</h4>
-        <p>{info}</p>
+        <h3 className="footer-name">{name}</h3>
+        <h4 className="footer-glass">{glass}</h4>
+        <p className="footer-info">{info}</p>
         <Link to={`/cocktail/${id}`} className="btn-primary">
           Details
         </Link>
