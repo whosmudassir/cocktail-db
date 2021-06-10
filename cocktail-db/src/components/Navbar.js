@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="nav-center">
         <Link to="/" className="logo">
-          🍹 CockTail World 🍹
+          CockTail World
         </Link>
         <ul className="nav-links">
           <li>

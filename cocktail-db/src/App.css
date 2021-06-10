@@ -1,3 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+:root {
+  --primary: #000;
+  --secondary: #151e29;
+  --text: #fff;
+  --effect: #1d8dee;
+}
+
+body {
+  background-color: var(--secondary);
+  color: var(--text);
+}
+
+/* loading */
+.load,
+.error,
+.section-title {
+  margin: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /*nav-bar*/
 nav {
   font-size: 1.5rem;
@@ -19,21 +42,22 @@ nav ul li {
 
 .link {
   text-decoration: none;
-  color: black;
+  color: var(--text);
   font-weight: bold;
 }
 
 .link:hover {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid var(--effect);
 }
 .logo {
+  font-family: "Great Vibes", cursive;
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-  font-size: 3rem;
+  color: #1d8dee;
+  font-weight: bolder;
+  font-size: 4rem;
   margin: 20px;
 }
 
@@ -64,17 +88,21 @@ nav ul li {
   margin: 0 auto;
 }
 
+.cocktail-center {
+  margin: 0 auto;
+}
+
 .cocktail-section {
   margin: 20px;
-  border: 2px solid black;
+  border: 2px solid var(--effect);
   padding: 20px;
   width: 406.8px;
-  margin: 40px auto;
+  margin: 0 auto;
 }
 
 .cocktail {
-  margin: 20px;
-  border: 2px solid black;
+  margin-bottom: 20px;
+  border: 2px solid var(--text);
   padding: 20px;
   width: 406.8px;
 }
@@ -109,22 +137,55 @@ nav ul li {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 18px;
+  margin-top: 18px;
 }
 
 .searchbar {
-  width: 500px;
+  width: 450px;
   height: 25px;
   color: black;
+  margin: auto;
 }
 
 .btn-primary {
-  background-color: black;
-  color: white;
+  background-color: var(--text);
+  color: var(--primary);
+  font-weight: bold;
   text-decoration: none;
-  padding: 8px 12px 8px 12px;
+  padding: 6px 10px 6px 10px;
 }
 
 .btn-primary:hover {
-  background-color: rgb(44, 44, 44);
+  background-color: var(--effect);
+}
+
+/* single */
+.drink-data {
+  font-weight: bold;
+}
+
+.drink {
+  display: flex;
+}
+
+.cocktail-section2 {
+  margin: 20px;
+  border: 2px solid var(--text);
+  padding: 20px;
+  padding-top: 0px;
+  width: 60%;
+  margin: 40px auto;
+}
+
+.imgsrc2 {
+  width: 406.8px;
+  margin-right: 30px;
+}
+
+.section-title2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  padding: 0;
 }
